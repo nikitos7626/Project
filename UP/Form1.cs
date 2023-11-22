@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace UP
 {
     public partial class Form1 : Form
@@ -43,7 +42,7 @@ namespace UP
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//метод авторизации
         {
             var loginUser = textBox1.Text;
             var PasswordUser = textBox2.Text;
