@@ -60,7 +60,7 @@ namespace UP
                 Form2 frm2 = new Form2();
                 this.Hide();
                 frm2.ShowDialog();
-                this.Show();
+                this.Show();//Настоящие кайфы
             }
             else
               MessageBox.Show("Такого аккаунта не существует","Аккаунта не существует",MessageBoxButtons.OK,MessageBoxIcon.Warning);
