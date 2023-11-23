@@ -25,7 +25,7 @@ namespace UP
             pictureBox1.Visible = false;
             textBox1.MaxLength = 50;
             textBox2.MaxLength = 50;
-           
+          
         }
 
         private void label1_Click(object sender, EventArgs e)
