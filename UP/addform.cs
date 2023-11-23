@@ -41,7 +41,7 @@ namespace UP
             }
             else
             {
-                MessageBox.Show("Цена должна иметь числовой формат!","ошибка",MessageBoxButtons.OK, MessageBoxIcon.Warning); //
+                MessageBox.Show("Цена должна иметь числовой формат!","ошибка",MessageBoxButtons.OK, MessageBoxIcon.Warning); //ророрн
             }
             database.CloseConnection();
         }
