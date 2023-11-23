@@ -29,6 +29,31 @@ namespace UP
             balance += Convert.ToInt32(textBoxAddBalance.Text);
 
             labelBalance.Text = balance.ToString();
+            textBoxAddBalance.Clear();
+
+            String connection = "Database=boop;ACER\\SQLEXPRESS;User Id=Kira;Password=" + labelBalance.Text; // сдесь мейби неправильно если что выебываеться смотри сюда !
+        }
+
+        private void Catatlog_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonBuy_Click(object sender, EventArgs e)
+        {
+            Buy b = new Buy();
+            b.Show();
+            this.Hide();
         }
     }
 }
