@@ -42,7 +42,7 @@ namespace UP
 
         }
 
-        private void button1_Click(object sender, EventArgs e)//метод авторизации
+        private void button1_Click(object sender, EventArgs e)//метод авторизации какашка
         {
             var loginUser = textBox1.Text;
             var PasswordUser = textBox2.Text;
