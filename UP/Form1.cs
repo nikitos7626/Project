@@ -88,5 +88,10 @@ namespace UP
             pictureBox2.Visible = true;
             pictureBox1.Visible = false;
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
