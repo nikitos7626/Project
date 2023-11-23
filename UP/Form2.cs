@@ -203,8 +203,6 @@ namespace UP
 
             }
         }
-
-
         private void button_edit_Click(object sender, EventArgs e)
         {
             Change();
