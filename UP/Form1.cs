@@ -33,16 +33,16 @@ namespace UP
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)//анальный секс
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
-        private void textBox2_TextChanged(object sender, EventArgs e)//жопа пкпререрн66
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)//метод авторизации какашка
+        private void button1_Click(object sender, EventArgs e)
         {
             var loginUser = textBox1.Text;
             var PasswordUser = textBox2.Text;
@@ -60,7 +60,7 @@ namespace UP
                 Form2 frm2 = new Form2();
                 this.Hide();
                 frm2.ShowDialog();
-                this.Show();//Другие кайфы
+                this.Show();
             }
             else
               MessageBox.Show("Такого аккаунта не существует","Аккаунта не существует",MessageBoxButtons.OK,MessageBoxIcon.Warning);
@@ -90,5 +90,3 @@ namespace UP
         }
     }
 }
-//-
-
