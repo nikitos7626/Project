@@ -34,7 +34,7 @@ namespace UP
             int price;
             if (int.TryParse(textBox_price.Text,out price))
             {
-                var addQuery = $"insert into books(name_book,price,discount,opisanie,proizvoditel) values ('{name}','{price}','{discount}','{opisanie}','{proizvoditel}',)";
+                var addQuery = $"insert into books(name_book,price,discount,opisanie,proizvoditel) values ('{name}','{price}','{discount}','{opisanie}','{proizvoditel}')";
                 var command = new SqlCommand(addQuery,database.GetConnection());
                 command.ExecuteNonQuery();  
                 MessageBox.Show("Запись успешно создана!!","Успех!",MessageBoxButtons.OK,MessageBoxIcon.Information);
