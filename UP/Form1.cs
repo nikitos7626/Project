@@ -88,5 +88,12 @@ namespace UP
             pictureBox2.Visible = true;
             pictureBox1.Visible = false;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            adminLogins admin = new adminLogins();
+            admin.Show();
+            this.Hide();
+        }
     }
 }
