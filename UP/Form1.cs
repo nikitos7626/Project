@@ -39,6 +39,12 @@ namespace UP
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+            
+            
+            //pictureBox2.Visible = false;
+
+            textBox2.UseSystemPasswordChar = true;
+
 
         }
 
@@ -95,5 +101,7 @@ namespace UP
             admin.Show();
             this.Hide();
         }
+
+        
     }
 }

@@ -26,7 +26,7 @@ namespace UP
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            textBox2.UseSystemPasswordChar = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,6 +51,11 @@ namespace UP
             }
             else
                 MessageBox.Show("Такого аккаунта не существует", "Аккаунта не существует", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+        }
+
+        private void adminLogins_Load(object sender, EventArgs e)
+        {
 
         }
     }

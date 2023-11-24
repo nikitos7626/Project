@@ -46,9 +46,12 @@ namespace UP
             if (checkBox1.Checked || command.ExecuteNonQuery() == 1)
             {
                 MessageBox.Show("Аккаунт успешно создан!", "Успех!");
-                Form3 frm3 = new Form3();
+                
+                Form1 frm1 = new Form1();
                 this.Hide();
-                frm3.ShowDialog(); //потом вставить переход на каталог
+                frm1.ShowDialog();
+                this.Show();
+                this.Close();
             }
             else
             {
@@ -87,6 +90,11 @@ namespace UP
 
 
 
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
 
         }
     }
