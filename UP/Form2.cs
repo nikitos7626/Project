@@ -119,14 +119,45 @@ namespace UP
 
         private void deleteRow()
         {
-            int index =dataGridView1.CurrentCell.RowIndex;
-            dataGridView1.Rows[index].Visible = false;
-            if (dataGridView1.Rows[index].Cells[0].Value.ToString()== string.Empty)
+            int index = dataGridView1.CurrentCell.RowIndex;
+            string productId = dataGridView1.Rows[index].Cells[0].Value.ToString();
+
+            // Если значение ProductId пустое, значит, это новая строка, которую нужно удалить только из таблицы DataGridView
+            if (string.IsNullOrEmpty(productId))
             {
+                dataGridView1.Rows[index].Visible = false;
                 dataGridView1.Rows[index].Cells[5].Value = RowState.Deleted;
                 return;
             }
+
+            // Иначе, удалить строку из базы данных
+            string queryString = $"DELETE FROM books WHERE ProductId = {productId}";
+            SqlCommand command = new SqlCommand(queryString, database.GetConnection());
+
+            try
+            {
+                database.OpenConnection();
+                int rowsAffected = command.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    dataGridView1.Rows.RemoveAt(index);
+                    MessageBox.Show("Строка успешно удалена.");
+                }
+                else
+                {
+                    MessageBox.Show("Не удалось удалить строку.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка удаления строки: {ex.Message}");
+            }
+            finally
+            {
+                database.CloseConnection();
+            }
         }
+
 
         private void Update()
         {

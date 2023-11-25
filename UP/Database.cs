@@ -9,7 +9,7 @@ namespace UP
 {
     internal class Database
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source = DESKTOP-PH57GC8\SQLEXPRESS;Initial Catalog = Practice;Integrated Security = True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source = DESKTOP-M3K51BL;Initial Catalog = Practice;Integrated Security = True");
 
         public void OpenConnection()
         {
