@@ -25,7 +25,7 @@ namespace UP
             pictureBox1.Visible = false;
             textBox1.MaxLength = 50;
             textBox2.MaxLength = 50;
-           
+          
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -87,6 +87,11 @@ namespace UP
             textBox2.UseSystemPasswordChar = true;
             pictureBox2.Visible = true;
             pictureBox1.Visible = false;
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }
