@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UP
 {
     internal class Database
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source = ACER\SQLEXPRESS;Initial Catalog = Practice;Integrated Security = True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source = DESKTOP-FETVKM3\SQLEXPRESS;Initial Catalog = Practice;Integrated Security = True");
 
         public void OpenConnection()
         {

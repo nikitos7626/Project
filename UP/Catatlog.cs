@@ -17,12 +17,9 @@ namespace UP
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void buttonAddBalance_Click(object sender, EventArgs e)
+        private void buttonAddBalance_Click(object sender, EventArgs e) // Пополнение баланса
         {
             int balance = Convert.ToInt32(labelBalance.Text);
 
@@ -33,27 +30,37 @@ namespace UP
 
             String connection = "Database=boop;ACER\\SQLEXPRESS;User Id=Kira;Password=" + labelBalance.Text; // сдесь мейби неправильно если что выебываеться смотри сюда !
         }
-
-        private void Catatlog_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void buttonBuy_Click(object sender, EventArgs e)
+        private void buttonBuy_Click(object sender, EventArgs e) // За покупками
         {
-            Buy b = new Buy();
-            b.Show();
+            Buy buyForm = new Buy();
+            buyForm.Show();
             this.Hide();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

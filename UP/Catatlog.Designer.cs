@@ -148,7 +148,6 @@
             this.label4.Size = new System.Drawing.Size(29, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "Имя";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBoxName
             // 
@@ -212,7 +211,6 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Catatlog";
             this.Text = "Мой профиль";
-            this.Load += new System.EventHandler(this.Catatlog_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
