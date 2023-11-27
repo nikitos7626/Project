@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Buy));
             this.buttonBackToProfile = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -52,9 +53,10 @@
             // 
             // buttonBackToProfile
             // 
-            this.buttonBackToProfile.Location = new System.Drawing.Point(12, 415);
+            this.buttonBackToProfile.Location = new System.Drawing.Point(16, 511);
+            this.buttonBackToProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonBackToProfile.Name = "buttonBackToProfile";
-            this.buttonBackToProfile.Size = new System.Drawing.Size(75, 23);
+            this.buttonBackToProfile.Size = new System.Drawing.Size(100, 28);
             this.buttonBackToProfile.TabIndex = 0;
             this.buttonBackToProfile.Text = "Назад";
             this.buttonBackToProfile.UseVisualStyleBackColor = true;
@@ -75,7 +77,8 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 15);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -87,47 +90,51 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 225);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(1035, 277);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseUp);
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.добавитьВКорзинуToolStripMenuItem,
             this.информацияОТовареToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(199, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(237, 52);
             // 
             // добавитьВКорзинуToolStripMenuItem
             // 
             this.добавитьВКорзинуToolStripMenuItem.Name = "добавитьВКорзинуToolStripMenuItem";
-            this.добавитьВКорзинуToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.добавитьВКорзинуToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.добавитьВКорзинуToolStripMenuItem.Text = "Добавить в корзину";
             this.добавитьВКорзинуToolStripMenuItem.Click += new System.EventHandler(this.добавитьВКорзинуToolStripMenuItem_Click);
             // 
             // информацияОТовареToolStripMenuItem
             // 
             this.информацияОТовареToolStripMenuItem.Name = "информацияОТовареToolStripMenuItem";
-            this.информацияОТовареToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.информацияОТовареToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
             this.информацияОТовареToolStripMenuItem.Text = "Информация о товаре";
             this.информацияОТовареToolStripMenuItem.Click += new System.EventHandler(this.информацияОТовареToolStripMenuItem_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(585, 414);
+            this.textBox1.Location = new System.Drawing.Point(780, 510);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 20);
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(582, 262);
+            this.label1.Location = new System.Drawing.Point(776, 322);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.Size = new System.Drawing.Size(63, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Корзина";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -136,9 +143,10 @@
             // 
             this.nameTovar.ContextMenuStrip = this.contextMenuStrip2;
             this.nameTovar.HideSelection = false;
-            this.nameTovar.Location = new System.Drawing.Point(585, 278);
+            this.nameTovar.Location = new System.Drawing.Point(780, 342);
+            this.nameTovar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nameTovar.Name = "nameTovar";
-            this.nameTovar.Size = new System.Drawing.Size(203, 97);
+            this.nameTovar.Size = new System.Drawing.Size(269, 118);
             this.nameTovar.TabIndex = 4;
             this.nameTovar.UseCompatibleStateImageBehavior = false;
             this.nameTovar.View = System.Windows.Forms.View.List;
@@ -147,33 +155,36 @@
             // 
             // contextMenuStrip2
             // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.удалитьТоварToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(153, 26);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(179, 28);
             // 
             // удалитьТоварToolStripMenuItem
             // 
             this.удалитьТоварToolStripMenuItem.Name = "удалитьТоварToolStripMenuItem";
-            this.удалитьТоварToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.удалитьТоварToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
             this.удалитьТоварToolStripMenuItem.Text = "Удалить товар";
             this.удалитьТоварToolStripMenuItem.Click += new System.EventHandler(this.удалитьТоварToolStripMenuItem_Click);
             // 
             // infoTovar
             // 
             this.infoTovar.HideSelection = false;
-            this.infoTovar.Location = new System.Drawing.Point(12, 278);
+            this.infoTovar.Location = new System.Drawing.Point(16, 342);
+            this.infoTovar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.infoTovar.Name = "infoTovar";
-            this.infoTovar.Size = new System.Drawing.Size(567, 97);
+            this.infoTovar.Size = new System.Drawing.Size(755, 118);
             this.infoTovar.TabIndex = 5;
             this.infoTovar.UseCompatibleStateImageBehavior = false;
             this.infoTovar.View = System.Windows.Forms.View.List;
             // 
             // Zakaz
             // 
-            this.Zakaz.Location = new System.Drawing.Point(667, 412);
+            this.Zakaz.Location = new System.Drawing.Point(889, 507);
+            this.Zakaz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Zakaz.Name = "Zakaz";
-            this.Zakaz.Size = new System.Drawing.Size(121, 23);
+            this.Zakaz.Size = new System.Drawing.Size(161, 28);
             this.Zakaz.TabIndex = 6;
             this.Zakaz.Text = "Оформить заказ";
             this.Zakaz.UseVisualStyleBackColor = true;
@@ -182,27 +193,30 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(501, 417);
+            this.label2.Location = new System.Drawing.Point(668, 513);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.Size = new System.Drawing.Size(97, 16);
             this.label2.TabIndex = 7;
             this.label2.Text = "Итог корзины";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 262);
+            this.label3.Location = new System.Drawing.Point(16, 322);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 13);
+            this.label3.Size = new System.Drawing.Size(122, 16);
             this.label3.TabIndex = 8;
             this.label3.Text = "Описание товара";
             // 
             // Buy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Zakaz);
@@ -212,6 +226,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonBackToProfile);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Buy";
             this.Text = "Магазин";
             this.Load += new System.EventHandler(this.Buy_Load);

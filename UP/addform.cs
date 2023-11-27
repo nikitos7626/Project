@@ -45,5 +45,10 @@ namespace UP
             }
             database.CloseConnection();
         }
+
+        private void addform_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
