@@ -82,15 +82,24 @@ namespace UP
 
             
 
-            if (checkBox1.Checked || command.ExecuteNonQuery() == 1)
+            if ( command.ExecuteNonQuery() == 1)
             {
-                MessageBox.Show("Аккаунт успешно создан!", "Успех!");
+                if (checkBox1.Checked)
+                {
+                    MessageBox.Show("Аккаунт успешно создан!", "Успех!");
 
-                Form1 frm1 = new Form1();
-                this.Hide();
-                frm1.ShowDialog();
-                this.Show();
-                this.Close();
+                    Form1 frm1 = new Form1();
+                    this.Hide();
+                    frm1.ShowDialog();
+                    this.Show();
+                    this.Close();
+
+
+                }
+                else
+                    label7.Text = "Вы не человек";
+
+                
             }
             else
             {
