@@ -111,13 +111,13 @@ namespace UP
             {
                 if(command.ExecuteNonQuery() == 1)
                 {
-MessageBox.Show("Аккаунт успешно создан!", "Успех!");
+                    MessageBox.Show("Аккаунт успешно создан!", "Успех!");
 
-                Form1 frm1 = new Form1();
-                this.Hide();
-                frm1.ShowDialog();
-                this.Show();
-                this.Close();
+                    Form1 frm1 = new Form1();
+                    this.Hide();
+                    frm1.ShowDialog();
+                    this.Show();
+                    this.Close();
                 }
                 
 

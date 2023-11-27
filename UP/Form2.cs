@@ -64,6 +64,7 @@ namespace UP
         {
             CreateColumns();
             RefreshDataGried(dataGridView1);
+            dataGridView1.Columns["IsNew"].Visible = false;
 
         }
 
