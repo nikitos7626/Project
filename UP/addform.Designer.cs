@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addform));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -100,7 +99,7 @@
             // textBox_name
             // 
             this.textBox_name.Location = new System.Drawing.Point(206, 137);
-            this.textBox_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_name.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(76, 20);
             this.textBox_name.TabIndex = 5;
@@ -108,7 +107,7 @@
             // textBox_price
             // 
             this.textBox_price.Location = new System.Drawing.Point(206, 174);
-            this.textBox_price.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_price.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_price.Name = "textBox_price";
             this.textBox_price.Size = new System.Drawing.Size(76, 20);
             this.textBox_price.TabIndex = 6;
@@ -116,7 +115,7 @@
             // textBox_discount
             // 
             this.textBox_discount.Location = new System.Drawing.Point(206, 211);
-            this.textBox_discount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_discount.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_discount.Name = "textBox_discount";
             this.textBox_discount.Size = new System.Drawing.Size(76, 20);
             this.textBox_discount.TabIndex = 7;
@@ -124,7 +123,7 @@
             // textBox_opisanie
             // 
             this.textBox_opisanie.Location = new System.Drawing.Point(206, 241);
-            this.textBox_opisanie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_opisanie.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_opisanie.Name = "textBox_opisanie";
             this.textBox_opisanie.Size = new System.Drawing.Size(76, 20);
             this.textBox_opisanie.TabIndex = 8;
@@ -132,7 +131,7 @@
             // textBox_proizvoditel
             // 
             this.textBox_proizvoditel.Location = new System.Drawing.Point(206, 286);
-            this.textBox_proizvoditel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_proizvoditel.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_proizvoditel.Name = "textBox_proizvoditel";
             this.textBox_proizvoditel.Size = new System.Drawing.Size(76, 20);
             this.textBox_proizvoditel.TabIndex = 9;
@@ -141,7 +140,7 @@
             // 
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(10, 11);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(581, 32);
             this.panel1.TabIndex = 10;
@@ -163,7 +162,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(206, 320);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 36);
             this.button1.TabIndex = 11;
@@ -184,7 +183,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(206, 99);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 13;
@@ -193,9 +192,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(470, 366);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
@@ -210,7 +208,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ForeColor = System.Drawing.Color.Blue;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addform";
             this.Text = "addform";
             this.Load += new System.EventHandler(this.addform_Load);
