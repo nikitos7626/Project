@@ -64,6 +64,7 @@ namespace UP
         {
             CreateColumns();
             RefreshDataGried(dataGridView1);
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

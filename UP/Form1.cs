@@ -39,7 +39,7 @@ namespace UP
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            textBox2.UseSystemPasswordChar = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -57,9 +57,9 @@ namespace UP
             if (table.Rows.Count == 1)
             {
                 MessageBox.Show("Вы успешно вошли!", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Form2 frm2 = new Form2();
+                Buy buy = new Buy();
                 this.Hide();
-                frm2.ShowDialog();
+                buy.ShowDialog();
                 this.Show();
             }
             else
@@ -92,6 +92,13 @@ namespace UP
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            adminLogins admin = new adminLogins();
+            admin.Show();
+            this.Hide();
         }
     }
 }

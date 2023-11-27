@@ -73,6 +73,12 @@
     <Compile Include="addform.Designer.cs">
       <DependentUpon>addform.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminLogins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminLogins.Designer.cs">
+      <DependentUpon>adminLogins.cs</DependentUpon>
+    </Compile>
     <Compile Include="Buy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,11 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="PracticeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PracticeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="addform.resx">
@@ -115,6 +126,9 @@
     <Compile Include="Catatlog.Designer.cs">
       <DependentUpon>Catatlog.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="adminLogins.resx">
+      <DependentUpon>adminLogins.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Buy.resx">
       <DependentUpon>Buy.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +157,17 @@
       <DependentUpon>Catatlog.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="PracticeDataSet.xsc">
+      <DependentUpon>PracticeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PracticeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PracticeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PracticeDataSet.xss">
+      <DependentUpon>PracticeDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
