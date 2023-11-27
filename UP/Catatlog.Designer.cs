@@ -47,7 +47,7 @@
             // buttonAddBalance
             // 
             this.buttonAddBalance.Location = new System.Drawing.Point(84, 140);
-            this.buttonAddBalance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAddBalance.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAddBalance.Name = "buttonAddBalance";
             this.buttonAddBalance.Size = new System.Drawing.Size(114, 44);
             this.buttonAddBalance.TabIndex = 0;
@@ -69,7 +69,7 @@
             // textBoxAddBalance
             // 
             this.textBoxAddBalance.Location = new System.Drawing.Point(116, 97);
-            this.textBoxAddBalance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxAddBalance.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxAddBalance.Name = "textBoxAddBalance";
             this.textBoxAddBalance.Size = new System.Drawing.Size(76, 20);
             this.textBoxAddBalance.TabIndex = 2;
@@ -208,9 +208,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAddBalance);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Catatlog";
             this.Text = "Мой профиль";
+            this.Load += new System.EventHandler(this.Catatlog_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

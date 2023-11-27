@@ -75,5 +75,10 @@ namespace UP
             MessageBox.Show("Оплата совершена успешно! Спасибо уважаемый человечик");
 
         }
+
+        private void CartForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

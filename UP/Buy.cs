@@ -49,30 +49,12 @@ namespace UP
 
 
 
-           // string nameTovar = textBox1.Text;     
-          //  APP.SetKorzina(nameTovar);
-           // listView1.Items.Add(APP.GetKorzina().ToString());
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e) // выбираем товар
         {
            _selectedRow = e.RowIndex;
-         //   if (e.RowIndex >= 0) 
-          //  {
-          //      DataGridViewRow row = dataGridView1.Rows[_selectedRow];
-          //      nameTovar.Items.Add(row.Cells[1].Value.ToString()); // вывод названия
-          //      nameTovar.Items.Add(row.Cells[3].Value.ToString()); // вывод цены
-          //  }
-
-            //  DataGridViewRow rowInfo = dataGridView1.Rows[SelectedRow]; // полученная строка(вся инф о товаре) для записи в APP лист
-         //   int _index = dataGridView1.Rows[SelectedRow].Index;
-         //   APP.SetIndex(_index);
-
-
-           // names.Add(rowInfo.ToString());
-           // APP.SetKorzina(names);
-
-           // InfoTovar.Items.Add(APP.GetKorzina());
+         
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -110,13 +92,7 @@ namespace UP
 
         }
 
-     //   private void hideZakaz()
-    //    {
-     //       if (nameTovar.Items.Count == 0)
-    //            Zakaz.Hide();
-    //        else
-    //            Zakaz.Show();
-    //    }
+     
 
         private void nameTovar_MouseUp(object sender, MouseEventArgs e)
         {
@@ -149,6 +125,11 @@ namespace UP
             CartForm crt = new CartForm();
             crt.Show();
             this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

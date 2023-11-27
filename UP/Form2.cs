@@ -64,7 +64,7 @@ namespace UP
         {
             CreateColumns();
             RefreshDataGried(dataGridView1);
-
+            dataGridView1.Columns["IsNew"].Visible = false;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

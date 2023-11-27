@@ -168,6 +168,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "CartForm";
             this.Text = "CartForm";
+            this.Load += new System.EventHandler(this.CartForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

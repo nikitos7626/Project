@@ -71,42 +71,12 @@ namespace UP
             var passwordUser = textBox2.Text;
             var name = textBox4.Text;
             var phoneNumber = textBox3.Text;
-            /*SqlDataAdapter adapter = new SqlDataAdapter();
-            DataTable table = new DataTable();*/
+           
             database.OpenConnection();
             string registr = $"insert into Client (name,phone_number,login,password) values ('{name}', '{phoneNumber}','{loginUser}','{passwordUser}')";
 
             SqlCommand command = new SqlCommand(registr, database.GetConnection());
-            //adapter.SelectCommand = command;
-            //adapter.Fill(table);
-
-
-
-            /* if ( command.ExecuteNonQuery() == 1)
-             {
-                 if (checkBox1.Checked)
-                 {
-                     MessageBox.Show("Аккаунт успешно создан!", "Успех!");
-
-                     Form1 frm1 = new Form1();
-                     this.Hide();
-                     frm1.ShowDialog();
-                     this.Show();
-                     this.Close();
-
-
-                 }
-                 else
-                     label7.Text = "Вы не человек";
-
-
-             }
-             else
-             {
-
-                 MessageBox.Show("Аккаунт не создан!");
-
-             }*/
+            
             if (checkBox1.Checked)
             {
                 if(command.ExecuteNonQuery() == 1)

@@ -62,12 +62,13 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 98);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1054, 247);
+            this.dataGridView1.Size = new System.Drawing.Size(859, 247);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -231,7 +232,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(674, 374);
+            this.label7.Location = new System.Drawing.Point(679, 375);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 13);
             this.label7.TabIndex = 6;
@@ -239,7 +240,7 @@
             // 
             // button_add
             // 
-            this.button_add.Location = new System.Drawing.Point(677, 401);
+            this.button_add.Location = new System.Drawing.Point(649, 404);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(108, 37);
             this.button_add.TabIndex = 7;
@@ -249,9 +250,9 @@
             // 
             // button_delete
             // 
-            this.button_delete.Location = new System.Drawing.Point(677, 444);
+            this.button_delete.Location = new System.Drawing.Point(763, 404);
             this.button_delete.Name = "button_delete";
-            this.button_delete.Size = new System.Drawing.Size(108, 35);
+            this.button_delete.Size = new System.Drawing.Size(108, 37);
             this.button_delete.TabIndex = 8;
             this.button_delete.Text = "Удалить";
             this.button_delete.UseVisualStyleBackColor = true;
@@ -259,7 +260,7 @@
             // 
             // button_edit
             // 
-            this.button_edit.Location = new System.Drawing.Point(677, 485);
+            this.button_edit.Location = new System.Drawing.Point(649, 457);
             this.button_edit.Name = "button_edit";
             this.button_edit.Size = new System.Drawing.Size(108, 31);
             this.button_edit.TabIndex = 9;
@@ -269,7 +270,7 @@
             // 
             // button_save
             // 
-            this.button_save.Location = new System.Drawing.Point(677, 522);
+            this.button_save.Location = new System.Drawing.Point(763, 457);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(108, 30);
             this.button_save.TabIndex = 10;
@@ -281,7 +282,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 623);
+            this.ClientSize = new System.Drawing.Size(903, 623);
             this.Controls.Add(this.button_save);
             this.Controls.Add(this.button_edit);
             this.Controls.Add(this.button_delete);
@@ -292,7 +293,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox_search);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ForeColor = System.Drawing.Color.Red;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
