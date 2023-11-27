@@ -28,7 +28,7 @@ namespace UP
             labelBalance.Text = balance.ToString();
             textBoxAddBalance.Clear();
 
-            String connection = "Database=boop;ACER\\SQLEXPRESS;User Id=Kira;Password=" + labelBalance.Text; // сдесь мейби неправильно если что выебываеться смотри сюда !
+            String connection = "Database=boop;ACER\\SQLEXPRESS;User Id=Kira;Password=" + labelBalance.Text; 
         }
    
 
@@ -59,6 +59,11 @@ namespace UP
 
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Catatlog_Load(object sender, EventArgs e)
         {
 
         }
