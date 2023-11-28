@@ -147,9 +147,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.Location = new System.Drawing.Point(168, 314);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(249, 29);
+            this.label6.Size = new System.Drawing.Size(203, 29);
             this.label6.TabIndex = 27;
-            this.label6.Text = "Название компании";
+            this.label6.Text = "Книжки Круто34";
             // 
             // button1
             // 
@@ -174,6 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UP.Properties.Resources._9b625d42db115ccd1d56ab1c7c132d86;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);

@@ -281,6 +281,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UP.Properties.Resources._9b625d42db115ccd1d56ab1c7c132d861;
             this.ClientSize = new System.Drawing.Size(1091, 623);
             this.Controls.Add(this.button_save);
             this.Controls.Add(this.button_edit);
@@ -292,7 +293,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox_search);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);

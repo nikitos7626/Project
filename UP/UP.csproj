@@ -152,6 +152,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Catatlog.resx">
       <DependentUpon>Catatlog.cs</DependentUpon>
@@ -196,6 +197,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9b625d42db115ccd1d56ab1c7c132d86.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9b625d42db115ccd1d56ab1c7c132d861.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9b625d42db115ccd1d56ab1c7c132d862.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
