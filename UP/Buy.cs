@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-
-
 namespace UP
 {
-
     public partial class Buy : Form
     {
         private Database _data = new Database();
@@ -22,16 +18,15 @@ namespace UP
         public Buy()
         {
             InitializeComponent();
-         //   hideZakaz();
         }
 
 
-        private void Buy_Load(object sender, EventArgs e) // Загрузка формы 
+        private void Buy_Load(object sender, EventArgs e) 
         {
-            _adapter = new SqlDataAdapter("SELECT * FROM books", _data.GetConnection()); // Запрос для выборки данных
+            _adapter = new SqlDataAdapter("SELECT * FROM books", _data.GetConnection()); 
 
-            _adapter.Fill(_table); // заполняем таблицы с помощью адаптера
-            dataGridView1.DataSource = _table; // Данные в гриде
+            _adapter.Fill(_table); 
+            dataGridView1.DataSource = _table; 
 
         }
 
@@ -43,41 +38,10 @@ namespace UP
             this.Hide();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-
-
-
-           // string nameTovar = textBox1.Text;     
-          //  APP.SetKorzina(nameTovar);
-           // listView1.Items.Add(APP.GetKorzina().ToString());
-        }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e) // выбираем товар
         {
            _selectedRow = e.RowIndex;
-         //   if (e.RowIndex >= 0) 
-          //  {
-          //      DataGridViewRow row = dataGridView1.Rows[_selectedRow];
-          //      nameTovar.Items.Add(row.Cells[1].Value.ToString()); // вывод названия
-          //      nameTovar.Items.Add(row.Cells[3].Value.ToString()); // вывод цены
-          //  }
-
-            //  DataGridViewRow rowInfo = dataGridView1.Rows[SelectedRow]; // полученная строка(вся инф о товаре) для записи в APP лист
-         //   int _index = dataGridView1.Rows[SelectedRow].Index;
-         //   APP.SetIndex(_index);
-
-
-           // names.Add(rowInfo.ToString());
-           // APP.SetKorzina(names);
-
-           // InfoTovar.Items.Add(APP.GetKorzina());
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void dataGridView1_MouseUp(object sender, MouseEventArgs e)
@@ -86,19 +50,19 @@ namespace UP
                 contextMenuStrip1.Show(MousePosition, ToolStripDropDownDirection.Right);
         }
 
-        private void добавитьВКорзинуToolStripMenuItem_Click(object sender, EventArgs e) // Добавляем товар в корзину
+        private void добавитьВКорзинуToolStripMenuItem_Click(object sender, EventArgs e) 
         {
             DataGridViewRow row = dataGridView1.Rows[_selectedRow];
-            nameTovar.Items.Add(row.Cells[1].Value.ToString()); // вывод названия
+            nameTovar.Items.Add(row.Cells[1].Value.ToString()); 
 
             int sum;
-            int priceLastTovar = Convert.ToInt32(row.Cells[3].Value); // цена
+            int priceLastTovar = Convert.ToInt32(row.Cells[3].Value); 
             sum =+ priceLastTovar;
             textBox1.Text = sum.ToString();
      
         }
 
-        private void информацияОТовареToolStripMenuItem_Click(object sender, EventArgs e) // Вывод информации
+        private void информацияОТовареToolStripMenuItem_Click(object sender, EventArgs e) 
         {
             DataGridViewRow row = dataGridView1.Rows[_selectedRow];
             if (infoTovar.Items.Count == 1){
@@ -110,21 +74,13 @@ namespace UP
 
         }
 
-     //   private void hideZakaz()
-    //    {
-     //       if (nameTovar.Items.Count == 0)
-    //            Zakaz.Hide();
-    //        else
-    //            Zakaz.Show();
-    //    }
-
         private void nameTovar_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right )
                 contextMenuStrip2.Show(MousePosition, ToolStripDropDownDirection.Right);
         }
 
-        private void удалитьТоварToolStripMenuItem_Click(object sender, EventArgs e) // контекс меню - удалить товар
+        private void удалитьТоварToolStripMenuItem_Click(object sender, EventArgs e) 
         {      
             if (nameTovar.Items.Count != 0 && nameTovar.SelectedItems[0].Index >= 0)
             {
@@ -150,6 +106,6 @@ namespace UP
             crt.Show();
             this.Hide();
         }
+
     }
 }
-// ценник, название храним в листе

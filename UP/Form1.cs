@@ -28,15 +28,6 @@ namespace UP
           
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             textBox2.UseSystemPasswordChar = true;
@@ -89,16 +80,13 @@ namespace UP
             pictureBox1.Visible = false;
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             adminLogins admin = new adminLogins();
             admin.Show();
             this.Hide();
         }
+
+
     }
 }

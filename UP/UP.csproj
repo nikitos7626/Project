@@ -152,6 +152,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Catatlog.resx">
       <DependentUpon>Catatlog.cs</DependentUpon>
@@ -196,6 +197,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo admin.PNG" />
+    <None Include="Resources\Oplata photo.PNG" />
+    <None Include="Resources\Logo2.jpg" />
+    <None Include="Resources\ForClientForm.jpg" />
+    <Content Include="Resources\Form2.png" />
+    <None Include="Resources\Logo1.jpg" />
+    <None Include="Resources\Form21.png" />
+    <Content Include="Resources\Logo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

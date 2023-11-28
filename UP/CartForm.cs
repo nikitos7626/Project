@@ -75,5 +75,10 @@ namespace UP
             MessageBox.Show("Оплата совершена успешно! Спасибо уважаемый человечик");
 
         }
+
+        private void adress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
